@@ -1,0 +1,13 @@
+from_factory,to_warehouse,transport_cost,distance_km,fuel_price,traffic_level
+F1,W1,11,175,108,Medium
+F1,W2,15,378,89,High
+F1,W3,11,842,108,High
+F1,W4,10,754,98,Low
+F2,W1,8,245,91,Low
+F2,W2,24,766,85,High
+F2,W3,14,883,105,High
+F2,W4,25,579,92,Medium
+F3,W1,16,156,109,Low
+F3,W2,21,498,93,Low
+F3,W3,14,494,88,Low
+F3,W4,20,249,96,Medium

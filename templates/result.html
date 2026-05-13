@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Optimization Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Optimization Result</h1>
+
+    <div class="status-section">
+
+        <div class="status-card">
+            <h3>Optimization Status</h3>
+            <p>{{ result.status }}</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Minimum Transportation Cost</h3>
+            <p>{{ result.minimum_cost }}</p>
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3>Total Factories</h3>
+            <p>{{ result.total_factories }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Warehouses</h3>
+            <p>{{ result.total_warehouses }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Dealers</h3>
+            <p>{{ result.total_dealers }}</p>
+        </div>
+
+    </div>
+
+    <div class="table-section">
+
+        <h2>Factory → Warehouse Routes</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for r in result.factory_routes %}
+
+                <tr>
+                    <td>{{ r.route }}</td>
+                    <td>{{ r.quantity }}</td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="table-section">
+
+        <h2>Warehouse → Dealer Routes</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {% for r in result.warehouse_routes %}
+
+                <tr>
+                    <td>{{ r.route }}</td>
+                    <td>{{ r.quantity }}</td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="graph-section">
+
+        <h2>Network Visualization</h2>
+
+        <img src="{{ url_for('static',
+                 filename='network.png') }}"
+             alt="Network Graph"
+             class="network-image">
+
+    </div>
+
+    <div class="button-section">
+
+        <a href="/">
+            <button class="primary-btn">
+                Back to Home
+            </button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
