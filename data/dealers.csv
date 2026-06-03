@@ -1,7 +1,7 @@
-dealer_id,city,demand,latitude,longitude
-D1,Hubli,120,15.3647,75.124
-D2,Mangalore,90,12.9141,74.856
-D3,Nagpur,150,21.1458,79.0882
-D4,Kochi,100,9.9312,76.2673
-D5,Visakhapatnam,130,17.6868,83.2185
-D6,Goa,110,15.2993,74.124
+dealer_id,dealer_name,demand
+D1,Dealer A,150
+D2,Dealer B,180
+D3,Dealer C,200
+D4,Dealer D,170
+D5,Dealer E,220
+D6,Dealer F,250

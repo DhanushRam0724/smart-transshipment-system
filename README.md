@@ -1,29 +1,40 @@
 # Smart Transshipment Optimization System
 
-A Flask-based logistics optimization platform using Linear Programming and PuLP to minimize transportation cost between factories, warehouses, and dealers.
+The Smart Transshipment Optimization System is a Flask-based web application that optimizes the movement of goods between factories, warehouses, and dealers using Linear Programming.
 
-The system models a real-world supply chain network and finds the optimal shipment routes while satisfying supply and demand constraints.
+The system minimizes transportation cost while considering delivery delays, warehouse capacities, and changing customer demand.
 
 ---
 ## Features
 
-- Multi-stage transshipment optimization
-- Transportation cost minimization
-- Supply-demand balancing
-- Dataset-driven logistics network
-- Route optimization using Linear Programming
-- Interactive Flask web interface
-- Network graph visualization
-- Real-time optimization result display
+- Transportation Cost Optimization
+- Delay-Aware Route Selection
+- Warehouse Capacity Constraints
+- Dynamic Demand Simulation
+- Network Visualization using NetworkX
+- Interactive Web Interface using Flask
+- Supply Chain Route Analysis
  --- 
+
+ ## Optimization Objectives
+
+ - Minimize transportation cost
+ - Minimize transportation delay
+ - Satisfy dealer demand
+ - Respect dealer demand
+ - Respect warehouse capacity constraints
+ - Maintain flow balance across warehouses
+ ---
 ## Technologies Used
 
 - Python
 - Flask
-- PuLP
+- PuLP (Linear Programming)
 - Pandas
 - NetworkX
 - Matplotlib
+- HTML
+- CSS
 ---
 ## Workflow
 ```
@@ -41,7 +52,7 @@ transshipment-problem/
 │   ├── factories.csv
 │   ├── factory_to_warehouse.csv
 │   ├── warehouse_to_dealer.csv
-│   └── warehouses.csv
+│   └── warehouse.csv
 │
 ├── images/
 │   ├── graph.png
@@ -74,8 +85,8 @@ transshipment-problem/
 
 ## Optimization Result
 
-![Result](images/result1.png)
-![result](images/Result.png)
+![Result](images/Result.png)
+![result](images/Result1.png)
 
 ## Network Visualization
 
@@ -152,7 +163,7 @@ This makes the project flexible and scalable for different logistics scenarios.
 
 - AI-based demand forecasting
 - Google Maps API integration
-- Real-time traffic optimization
+- Real-time traffic integration
 - Vehicle routing system
 - Warehouse inventory prediction
 - Dynamic transportation pricing

@@ -1,25 +1,25 @@
-from_warehouse,to_dealer,transport_cost,distance_km,delivery_deadline_hours,vehicle_type
-W1,D1,29,641,63,Mini Truck
-W1,D2,24,1198,19,Truck
-W1,D3,12,700,65,Container
-W1,D4,29,840,48,Mini Truck
-W1,D5,12,193,54,Mini Truck
-W1,D6,19,263,66,Mini Truck
-W2,D1,13,878,29,Truck
-W2,D2,30,847,22,Truck
-W2,D3,21,529,54,Truck
-W2,D4,30,246,50,Container
-W2,D5,15,1193,58,Mini Truck
-W2,D6,15,1046,36,Truck
-W3,D1,30,549,55,Truck
-W3,D2,11,569,64,Mini Truck
-W3,D3,20,921,29,Mini Truck
-W3,D4,16,744,25,Container
-W3,D5,25,910,68,Container
-W3,D6,24,392,28,Mini Truck
-W4,D1,17,638,59,Container
-W4,D2,23,917,35,Mini Truck
-W4,D3,14,1143,43,Mini Truck
-W4,D4,11,324,21,Container
-W4,D5,15,964,50,Mini Truck
-W4,D6,22,881,50,Truck
+from_warehouse,to_dealer,transport_cost,delay_hours,transport_mode
+W1,D1,5,1,Truck
+W1,D2,6,2,Truck
+W1,D3,8,3,Rail
+W1,D4,10,4,Rail
+W1,D5,12,5,Rail
+W1,D6,13,5,Rail
+W2,D1,7,2,Truck
+W2,D2,5,1,Truck
+W2,D3,6,2,Truck
+W2,D4,8,3,Rail
+W2,D5,9,4,Rail
+W2,D6,11,5,Rail
+W3,D1,10,4,Rail
+W3,D2,8,3,Rail
+W3,D3,5,1,Truck
+W3,D4,6,2,Truck
+W3,D5,7,3,Truck
+W3,D6,9,4,Rail
+W4,D1,12,5,Rail
+W4,D2,10,4,Rail
+W4,D3,8,3,Truck
+W4,D4,6,2,Truck
+W4,D5,5,1,Truck
+W4,D6,7,2,Truck
